@@ -1,0 +1,15 @@
+{
+  "name": "code_challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alfonso Ramos <alfonsoramos.1803@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "jest": "^28.0.3"
+  }
+}
