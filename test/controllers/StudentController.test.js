@@ -17,6 +17,7 @@ describe("Test de StudentController", () =>{
     test("Requerimiento 2: Retornar los email de los estudiantes que tengan certificado", () =>{
         const students = StudentController.getStudents("./data/visualpartners.json");
         const emailsOfStudents = StudentController.getEmails(students);
+        console.log(emailsOfStudents);
         expect(typeof emailsOfStudents).toBe("object");
         expect(emailsOfStudents[0]).toMatch(/Todd@visualpartnership.xyz/);
         expect(emailsOfStudents[5]).toMatch(/Montoya@visualpartnership.xyz/);
