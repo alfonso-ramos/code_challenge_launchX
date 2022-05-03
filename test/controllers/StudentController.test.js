@@ -21,4 +21,10 @@ describe("Test de StudentController", () =>{
         expect(emailsOfStudents[0]).toMatch(/Todd@visualpartnership.xyz/);
         expect(emailsOfStudents[5]).toMatch(/Montoya@visualpartnership.xyz/);
     });
+    test("Requerimiento3: Retornar los estudiantes que tengan 500 o mas creditos", () =>{
+        const students = StudentController.getStudents("./data/visualpartners.json");
+        const studentsCredits = StudentController.getStudentCredits(students);
+        expect(typeof studentsCredits).toBe("object");
+        expect(studentsCredits[0].credits).toBe(508);
+    });
 });
